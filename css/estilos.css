@@ -1,0 +1,230 @@
+/* determinamos los prmeros parametros del cuerpo de
+la pagina tipo de fuente el ancho y color de fondo*/
+/* */
+*
+{
+ margin:0;
+}
+body{
+  font-family: 'Pacifico', cursive;
+	width: 90%;
+	margin-left: 5%;
+	background-color: black;
+  font-size: 1.5em;
+
+}
+
+/* definimos el color de fondo del encabezado,
+el borde redondeado en la parte superior,el color y sombra de la fuente, ancho y alto,y la distribucion de los elementos del encabezado */
+header{
+	background-color: #5b7989;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: white;
+		width: 100%;
+	display: flex;
+	flex-direction: row;
+  animation-duration: 3s;
+  animation-name: animacion1;
+
+}
+/*definimos el ancho y la margen del titulo */
+header h1{
+	width: 70%;
+	margin-right: 30px;
+	margin-top:1px;
+  text-shadow: 2px 2px #02010a;
+}
+/*definimos el ancho, la alineacion del menu de navegacion */
+header nav{
+	width: 30%;
+	text-align: right;
+	margin-top: 50px;
+	margin-right: 30px;
+
+
+/*definimos el color de la fuente del menu de navegacion  */
+	}
+header a{
+	color: white;
+  margin: 1%;
+}
+
+/*deeterminamos que el primer elemento del nav
+no tenga decoracion */
+nav :first-child{
+  text-decoration: none;
+
+}
+/*Realizamos las especificaciones del footer */
+footer{
+  width: 100%;
+  clear: both;
+  background-color: #C6d5c5;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius: 10px;
+  font-size: 100%;
+}
+footer:hover{
+  text-decoration: underline;
+}
+/*determinamos el ancho de la seccion que contiene las
+imagenes y las hacemos responsivas */
+#contenido{
+width: 100%;
+}
+/*determinamos la sombra de las imagenes */
+img{
+  box-shadow:2px #02010a;
+}
+
+figure
+{
+  box-sizing: border-box;
+	float:left;
+	width: 900px;
+  height: 100%;
+	background-color: grey;
+	padding: 2%;
+	text-align: center;
+
+}
+
+#imagen1{
+
+	background-color: #82c3a6;
+	width: 100%;
+}
+
+#imagen1 img{
+    width: 85%;
+    border: 2px solid white;
+}
+#imagen2{
+	background-color: #d5c75f;
+	width: 50%;
+
+}
+#imagen2 img{
+width: 100%;
+border: 2px solid black;
+transition: 1s;
+}
+#imagen2 img:hover{
+    border:0;
+  transform: rotatez(10deg);
+
+}
+#imagen3{
+  background-color: #d5c75f;
+	width: 50%;
+
+
+}
+#imagen3 img{
+width: 100%;
+border: 2px solid black;
+transition: 1s;
+}
+#imagen3 img:hover{
+  border:0;
+  transform: translateX(20px)
+              translateY(-5px);
+}
+
+/* definimos los estilos del footer*/
+#contenido2{
+  text-align:left;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 100%;
+  display: flex;
+	flex-direction:row;
+  padding: 3%;
+}
+#contenido2 img{
+  border-radius: 100%;
+}
+
+
+.contacto {
+  width: 25%;
+  margin: 2%;
+}
+.terminos{
+  width: 25%;
+  margin: 2%;
+}
+.redes{
+  width: 25%;
+  margin: 2%;
+}
+.derechos{
+  width: 25%;
+  margin: 2%;
+}
+@keyframes animacion1{
+  0%{
+     margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+
+
+@media screen   and (max-width:900px){
+
+
+header{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 100%;
+}
+header h1{
+	width: 100%;
+  text-align: center;
+
+}
+
+header nav{
+	width: 100%;
+	text-align: center;
+}
+
+
+#contenido2{
+  text-align:left;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+	flex-direction:column;
+  padding: 3%;
+  font-size: 100%;
+}
+#imagen1{
+  width: 100%;
+}
+#imagen2{
+  width: 100%;
+}
+#imagen3{
+  width: 100%;
+}
+.contacto {
+  width: 100%;
+  }
+.terminos{
+  width:100%;
+}
+.redes{
+  width: 100%;
+}
+.derechos{
+  width: 100%;
+}
