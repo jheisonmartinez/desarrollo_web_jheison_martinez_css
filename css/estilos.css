@@ -1,10 +1,15 @@
 /* determinamos los prmeros parametros del cuerpo de
 la pagina tipo de fuente el ancho y color de fondo*/
 /* */
+
+/* usamos el selector universal para
+determinar que la margen del proyecto*/
 *
 {
  margin:0;
 }
+
+/* determino los parametros basicos del cuerpo  */
 body{
   font-family: 'Pacifico', cursive;
 	width: 90%;
@@ -54,7 +59,7 @@ header a{
 
 /*deeterminamos que el primer elemento del nav
 no tenga decoracion */
-nav :first-child{
+ #activa {
   text-decoration: none;
 
 }
