@@ -82,8 +82,11 @@ width: 100%;
 }
 #contenidoretratos{
 width: 100%;
-	flex-direction: row;
-
+height: 100%;
+}
+}
+#contenidopaisajes{
+width: 100%;
 }
 /*determinamos la sombra de las imagenes */
 img{
@@ -241,6 +244,10 @@ header nav{
 #imagen3{
   width: 100%;
 }
+#imagen4{
+  width: 100%;
+}
+
 .contacto {
   width: 100%;
   }
