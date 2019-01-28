@@ -79,6 +79,10 @@ footer:hover{
 imagenes y las hacemos responsivas */
 #contenido{
 width: 100%;
+}
+#contenidoretratos{
+width: 100%;
+	flex-direction: row;
 
 }
 /*determinamos la sombra de las imagenes */
@@ -90,13 +94,12 @@ figure
 {
   box-sizing: border-box;
 	float:left;
-	width: 900px;
+	width: 100%;
   height: 100%;
-	background-color: grey;
 	padding: 2%;
 	text-align: center;
   text-decoration: underline;
-
+  background-color: #d5c75f;
 }
 /*determino el ancho y el color de fondo del contenedor
 de las imagenes */
@@ -143,7 +146,14 @@ transition: 1s;
   transform: translateX(20px)
               translateY(-5px);
 }
-
+#imagen4{
+  width: 33.33%;
+  height:  50%;
+}
+#imagen4 img{
+  width: 100%;
+  border: 2px solid black;
+}
 /* definimos los estilos del footer*/
 #contenido2{
   text-align:left;
