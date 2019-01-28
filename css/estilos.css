@@ -167,11 +167,16 @@ transition: 1s;
 	flex-direction:row;
   padding: 3%;
 }
-#contenido2 img{
-  border-radius: 100%;
+#primera{
+  -webkit-filter: blur(10px)
+}
+#par{
+  -webkit-filter:grayscale(100%)
 }
 
-
+#tercera{
+  -webkit-filter:sepia(90%)
+}
 .contacto {
   width: 25%;
   margin: 2%;
@@ -248,6 +253,9 @@ header nav{
   width: 100%;
 }
 
+#contenido2 img{
+  border-radius: 100%;
+}
 .contacto {
   width: 100%;
   }
